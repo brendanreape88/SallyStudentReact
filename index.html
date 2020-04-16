@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume</title>
+</head>
+<body>
+	<div id="application-root"></div>
+  
+  <script
+	src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+	src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+	src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  
+  <script type="text/babel">
+    function App() {
+      return (
+      <>
+        <header>
+          <p><a href="#About-Me">About Me</a></p>
+          <p><a href="#Education">Education</a></p>
+          <p><a href="#Employment-History">Employment History</a></p>
+          <p><a href="#Contact">Contact</a></p>
+          <h1>Sally Student's Kickass Resume</h1>
+        </header>
+        <main>
+        <section>
+          <h2 id="About-Me">About Me</h2>
+          <p>Hi! I'm Sally Student. Yes, that's my real name. I get asked that all the time. And to answer your next question, I'm a mediocre student. Ironically, the Student lineage has had very few scholarly members over the centuries.</p>
+          <p>In case you want to see the lovely face you're considering hiring...</p>
+          <img src="https://pbs.twimg.com/profile_images/1502208479/2042.jpg" alt="my lovely face">
+          <p>You're welcome ;-)</p>
+        </section>
+        <br>
+        <section>
+          <h2 id="Education">Education</h2>
+          <p>I recieved my BA from the University of Phoenix in Amusement Park and Roller Coaster Engineering</p>
+        </section>
+        <br>
+        <br>
+        <section>
+        <h2 id="Employment-History">Employment History</h2>
+          <ol>
+            <li>Hot Dog On A Stick: Dog Dipper from 1998 - 1998</li>
+            <li>I basically just dipped the dogs into the sweet golden batter 24/7.</li>
+            <li>Haliburton: Transnational Government Disruption and Acquisitions from 1998 - 2020</li>
+            <li>I helped this non profit charity help world governments to help themselves (namely by imploding them from the inside).</li>
+          </ol>
+        </section>
+        <br>
+        <section>
+          <h2 id="Contact">Contact</h2>
+          <p>Here's some useful contact info:</p>
+          <address>
+            <ul>
+              <li>Email:<a href="mailto:sdawg@hotmail.com"> sdawg@hotmail.com</a></li>
+              <li>Phone: 123-7654</li>
+            </ul>
+          </address>
+        </section>
+        </main>
+      </>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.querySelector('#application-root')
+    );
+  </script>
+</body>
+</html>
